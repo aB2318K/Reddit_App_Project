@@ -34,7 +34,7 @@
   cursor: not-allowed;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 600px) {
   .container {
     flex-direction: row; 
     align-items: center; 
