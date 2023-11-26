@@ -56,7 +56,6 @@
 
 @media (max-width: 500px) {
   .container { 
-    margin-left: 0;
     gap: 1px;
   }
 
@@ -67,8 +66,8 @@
   }
 
   .button {
-    padding: 3px 0px; 
-    font-size: 10px; 
-    width: 30%; 
+    padding: 3px 2px; 
+    font-size: 5px; 
+    width: auto;
   }
 }
