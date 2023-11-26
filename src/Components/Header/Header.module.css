@@ -58,12 +58,12 @@
 }
 
 @media (max-width: 500px) {
-  .searchBox {
-    justify-content: flex-start;
-  }
-  .header {
-    gap: 0px;
-  }
+   .filter {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 0;
+   }
   
  }
 
