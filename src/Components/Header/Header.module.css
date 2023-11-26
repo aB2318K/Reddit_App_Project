@@ -49,7 +49,7 @@
 
   .searchBox {
     justify-content: flex-end;
-    margin: 0; 
+    margin-right: 10px; 
   }
 
   .filter {
