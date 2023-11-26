@@ -58,9 +58,28 @@
 }
 
 @media (max-width: 500px) {
+<<<<<<< HEAD
   .searchBox {
     justify-content: center;
   }
   
  }
 
+=======
+  .header {
+    padding: 0px;
+  }
+
+  .h1 {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .filter {
+    font-size: 12px;
+    padding: 0;
+    margin-right: 10px;
+  }
+
+}
+>>>>>>> 037528cc418209326430981a9eb4090e1d3ff49a
