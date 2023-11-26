@@ -59,7 +59,7 @@
 
 @media (max-width: 500px) {
   .searchBox {
-    justify-content: center;
+    justify-content: flex-start;
   }
   
  }
