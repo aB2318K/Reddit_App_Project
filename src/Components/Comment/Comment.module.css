@@ -150,6 +150,10 @@
   margin-top: 0;
 }
 
+#mobileVoteInfo {
+  display: none;
+}
+
 @media (max-width: 600px) {
   .body {
     align-items: center;
@@ -200,6 +204,10 @@
 
   .commentSection{
     margin-top: -10px;;
+  }
+
+  #mobileVoteInfo {
+    display: inline-block;
   }
 
 }
