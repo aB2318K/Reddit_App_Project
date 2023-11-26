@@ -1,15 +1,21 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { fetchPosts } from "./api";
+import { fetchPosts, fetchSubRedditPosts, fetchPostsByFilter } from "./api.js";
 
-export const loadPostsById = createAsyncThunk('feed/loadPostsById', async (id, thunkAPI) => {
-    try {
-        const response = await fetchPosts(id);
-        const data = await response.json();
-        console.log(data);
-        return data;
-    } catch (error) {
-        throw error; 
+export const loadPosts = createAsyncThunk('feed/loadPostsById', async ({ subReddit, option }) => {
+  try {
+    if (subReddit && (option !== "new" && option !== "top")) {
+      const response = await fetchSubRedditPosts(subReddit);
+      return response;
+    } else if (option === "new" || option === "top") {
+      const response = await fetchPostsByFilter(option);
+      return response;
+    } else {
+      const response = await fetchPosts();
+      return response;
     }
+  } catch (error) {
+    throw error;
+  }
 });
 
 
@@ -23,23 +29,22 @@ const feedSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(loadPostsById.pending, (state) => {
+      .addCase(loadPosts.pending, (state) => {
         state.isLoading = true;
         state.hasError = false;
       })
-      .addCase(loadPostsById.fulfilled, (state, action) => {
+      .addCase(loadPosts.fulfilled, (state, action) => {
         state.isLoading = false;
         state.hasError = false;
-        state.posts = action.payload;
+        state.posts = [action.payload];
       })
-      .addCase(loadPostsById.rejected, (state) => {
+      .addCase(loadPosts.rejected, (state) => {
         state.isLoading = false;
         state.hasError = true;
       });
   }
   
 });
-
 
 export const { reducer } = feedSlice;
 export const selectPosts = (state) => state.feed.posts;

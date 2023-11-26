@@ -1,0 +1,58 @@
+.dropdown {
+  padding: 6px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  background-color: white;
+  color: gray;
+  width: 70px;
+  height: 20px;
+}
+
+.options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white; 
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.option {
+  padding: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  color: gray; /* Change to gray */
+}
+
+.option:hover {
+  background-color: lightgray; /* Adjust the color as needed */
+}
+
+@media (max-width: 768px) {
+  .dropdown {
+    font-size: 14px; 
+    max-height: 20px;
+    padding: 1px; 
+  }
+
+  .options {
+    width: 90%; 
+    padding: 0;
+    margin: 0 2.7px 0;
+    z-index: 1;
+  }
+
+  .option {
+    font-size: 14px; 
+    max-height: 20px;
+    padding: 0;
+    margin: 0;
+  }
+}

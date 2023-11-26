@@ -1,10 +1,10 @@
+import Feed from "../Feed/Feed";
+
 function SubReddits() {
 
    return(
 
-    <> 
-        This will be the drop down menu to choose SubReddits.
-    </>
+    <Feed />
 
 
    )

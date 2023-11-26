@@ -1,0 +1,74 @@
+/* Comment Container */
+.commentContainer {
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Author info in comments */
+.authorInfo {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #336699; 
+}
+
+/* Comment body */
+.commentBody {
+  margin-bottom: 12px;
+  color: #444; 
+}
+
+/* Vote container for comments */
+.voteContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+/* Upvote symbol */
+.upVote {
+  display: flex;
+  flex-direction: row; 
+  margin-right: 8px; 
+}
+
+/* Upvote and Downvote symbols */
+.voteSymbol {
+  font-size: 18px;
+  margin-right: 0; 
+  color: #555; 
+}
+
+/* Vote count */
+.voteCount {
+  font-size: 16px;
+  color: #777; 
+  margin-right: 8px; 
+}
+
+/* Replies container */
+.replies {
+  margin-top: 15px;
+}
+
+/* Reply container */
+.replyContainer {
+  border-left: 2px solid #25242427;
+  padding: 12px;
+  margin-top: 12px;
+  margin-left: 20px; 
+  background-color: #f5f5f5;
+}
+
+/* Reply body */
+.replyBody {
+  margin-bottom: 10px;
+  color: #555; /* Reply text color */
+}
+
+/* more comments */
+.moreComments {
+  margin-left: 70px;
+}

@@ -1,10 +1,10 @@
 import Feed from "../Feed/Feed";
+import React from "react";
 
 function Home() {
 
     return(
         <>
-            This is home, this is where the feed will go and users can see the posts. <br />
             <Feed />
         </>
     )
