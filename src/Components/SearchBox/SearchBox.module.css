@@ -55,9 +55,7 @@
 }
 
 @media (max-width: 500px) {
-  .container {
-    flex-direction: row; 
-    align-items: center; 
+  .container { 
     gap: 1px;
   }
 
