@@ -37,7 +37,7 @@
 @media (max-width: 768px) {
   .header {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
     max-height: 20px;
   }
@@ -58,19 +58,9 @@
 }
 
 @media (max-width: 500px) {
-  .header {
-    padding: 0px;
+  .searchBox {
+    justify-content: center;
   }
+  
+ }
 
-  .h1 {
-    font-size: 14px;
-    margin: 0;
-  }
-
-  .filter {
-    font-size: 12px;
-    padding: 0;
-    margin-right: 10px;
-  }
-
-}

@@ -55,19 +55,20 @@
 }
 
 @media (max-width: 500px) {
-  .container { 
-    gap: 1px;
+  .button {
+    padding: 6px;
+    width: auto;
+    font-size: 8px;
   }
 
   .input {
-    padding: 3px;
-    font-size: 11px; 
-    width: 70%; 
+    padding: 6px;
+    font-size: 9px; 
+    width: 60%; 
   }
 
-  .button {
-    padding: 3px 3px; 
-    font-size: 10px; 
-    width: 30%; 
+  .container {
+    gap: 3px;
   }
-}
+ }
+
