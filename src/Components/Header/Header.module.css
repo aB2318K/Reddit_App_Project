@@ -50,6 +50,7 @@
   .searchBox {
     justify-content: flex-end;
     margin-right: 10px; 
+    margin-left: 10px;
   }
 
   .filter {
@@ -62,7 +63,7 @@
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 0px;
    }
    
  }
