@@ -49,10 +49,28 @@
 
   .searchBox {
     justify-content: flex-end;
-    margin: 0; 
+    margin-right: 10px; 
   }
 
   .filter {
     margin: 0 20px 0; 
   }
+}
+
+@media (max-width: 500px) {
+  .header {
+    padding: 0px;
+  }
+
+  .h1 {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .filter {
+    font-size: 12px;
+    padding: 0;
+    margin-right: 10px;
+  }
+
 }

@@ -34,7 +34,7 @@
   cursor: not-allowed;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
   .container {
     flex-direction: row; 
     align-items: center; 
@@ -49,6 +49,24 @@
 
   .button {
     padding: 8px 12px; 
+    font-size: 10px; 
+    width: 30%; 
+  }
+}
+
+@media (max-width: 500px) {
+  .container { 
+    gap: 1px;
+  }
+
+  .input {
+    padding: 3px;
+    font-size: 11px; 
+    width: 70%; 
+  }
+
+  .button {
+    padding: 3px 3px; 
     font-size: 10px; 
     width: 30%; 
   }
