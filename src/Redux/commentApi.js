@@ -1,7 +1,4 @@
-require('dotenv').config();
-const clientId = process.env.REACT_APP_CLIENT_ID;
-const clientSecret = process.env.REACT_APP_CLIENT_SECRET; 
-
+import { clientId, clientSecret } from "./config";
 
 export const fetchComments = async (postId) => {
     try {
