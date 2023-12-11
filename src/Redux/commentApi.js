@@ -1,5 +1,6 @@
-const clientId = 'v9b1jUBc-grV10iAymubYw';  
-const clientSecret = 'dYbTKGrFzCoyOZLXitAdi-hru_6BAg';  
+require('dotenv').config();
+const clientId = process.env.REACT_APP_CLIENT_ID;
+const clientSecret = process.env.REACT_APP_CLIENT_SECRET; 
 
 
 export const fetchComments = async (postId) => {
