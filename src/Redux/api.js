@@ -1,4 +1,5 @@
-import { clientId, clientSecret } from "./config";
+const clientId = 'v9b1jUBc-grV10iAymubYw';
+const clientSecret = 'dYbTKGrFzCoyOZLXitAdi-hru_6BAg';
 //const redirectUri = 'http://localhost:5173/';
 const userAgent = 'DeDDit';
 

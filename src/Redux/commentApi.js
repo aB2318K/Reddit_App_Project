@@ -1,4 +1,6 @@
-import { clientId, clientSecret } from "./config";
+const clientId = 'v9b1jUBc-grV10iAymubYw';  
+const clientSecret = 'dYbTKGrFzCoyOZLXitAdi-hru_6BAg';  
+
 
 export const fetchComments = async (postId) => {
     try {
